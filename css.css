@@ -1,0 +1,264 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* 清除浮动代码 */
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+	visibility: hidden;
+}
+body {
+	background-color: #060606;
+}
+/* ---------------------头部开始---------------------- */
+header{
+	height: 200px;
+	background-color: #676969;
+}
+header .w {
+	position: relative;
+	width: 1000px;
+	height: 200px;
+	margin: 0 auto;
+}
+header .w h1 {
+	font-size: 50px;
+	line-height: 170px;
+	text-align-last: justify;
+}
+.info {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	color: #DF5000;
+}
+/* ---------------------头部结束---------------------- */
+
+/* -------------------三板块公共样式------------------- */
+article {
+	position: relative;
+	margin: 0 auto;
+	width: 1000px;
+	height: 900px;
+}
+section[class^="content"] {
+	position: absolute;
+	transition: all 1s;
+  border-radius: 10px;
+	box-shadow: -20px -15px 4px 4px rgba(0,0,0, .3);
+}
+section[class^="content"]:hover {
+	z-index: 99;
+	width: 500px;
+	height: 700px;
+	top: 50px;
+	left: 280px;
+	background-color: #e1e1e1;
+}
+div[class^="child_header"] {
+	height: 20%;
+	border-radius: 10px 10px 0 0;
+}
+.child_footer {
+	height: 10%;
+	border-radius: 0 0 10px 10px;
+}
+section[class^="content"] .detail p:nth-of-type(n+2) {
+	margin: 40px;
+	font-size: 20px;
+}
+/* -----------------三板块公共样式------------------ */
+
+/* -------------------板块一开始------------------- */
+.content1 {
+	position: relative;
+	top: 100px;
+	left: 250px;
+	width: 250px;
+	height: 500px;
+}
+.content1 .child_header1 {
+	background-image: linear-gradient(rgba(255,00,00, 1), rgba(255,00,00, .5));
+}
+.content1 .child_header1 p {
+	font-size: 30px;
+	text-align: center;
+	line-height: 100px;
+}
+.content1 .detail {
+	visibility: hidden;
+	height: 70%;
+	padding: 20px 50px;
+	text-align: center;
+}
+.content1 .detail p:first-of-type {
+	text-align: center;
+	color: rgba(255,255,255, .7);
+	font: italic 600 30px/80px Microsoft YaHei;
+	text-shadow:1px 1px 1px rgba(0,0,0,1);
+	border-bottom: 2px groove red;
+}
+.content1 .child_footer {
+		background-image: linear-gradient(to top, rgba(255,00,00, 1), rgba(255,00,00, .5));
+}
+.cover1 {
+	position: absolute;
+	top: 100px;
+	left: 0;
+	width: 250px;
+	height: 350px;
+	background-color: #000000;
+}
+
+			/* 特殊微信二维码板块 */
+.icon{
+	position: absolute;
+	display: none;
+	top: 320px;
+	left: 300px;
+	border-top: 13px solid #fefefe;
+	border-right: 10px solid transparent;
+	border-bottom: 13px solid transparent;
+	border-left: 10px solid #fefefe;
+}
+.pic{
+	position: absolute;
+	display: none;
+	width: 250px;
+	height: 300px;
+	background: url(./imgs/IMG_1749.PNG) no-repeat;
+	background-size:100% 100%;
+	top: 20px;
+	left: 220px;
+	box-shadow: -10px 10px 5px 5px rgba(0,0,0, .5);
+}
+.get_QRcode {
+	color: #6495ED;
+	cursor: pointer;
+}
+			/* 特殊微信二维码板块 */
+
+
+/* -------------------板块一结束------------------- */
+
+/* -------------------板块二开始------------------- */
+.content2 {
+	position: relative;
+	top: 150px;
+	left: 350px;
+	width: 300px;
+	height: 550px;
+}
+.content2 .child_header2 {
+	background-image: linear-gradient(rgba(00,255,00, 1), rgba(00,255,00, .5));
+}
+.content2 .child_header2 p  {
+	font-size: 40px;
+	text-align: center;	
+	line-height: 110px;
+}
+.content2 .detail {
+	visibility: hidden;
+	height: 70%;
+	padding: 25px 60px;
+	text-align: center;
+}
+.content2 .detail p:first-of-type {
+	text-align: center;
+	color: rgba(255,255,255, .7);
+	font: italic 700 40px/90px Microsoft YaHei;
+	text-shadow:2px 2px 2px rgba(0,0,0,1);
+	border-bottom: 4px groove green;
+}
+.content2 .child_footer {
+	background-image: linear-gradient(to top, rgba(00,255,00, 1), rgba(00,255,00, .5));
+}
+.cover2 {
+	position: absolute;
+	top: 110px;
+	left: 0;
+	width: 300px;
+	height: 385px;
+	background-color: #000000;
+}
+/* -------------------板块二结束----------------- */
+
+/* -------------------板块三开始------------------- */
+.content3 {
+	position: relative;
+	top: 200px;
+	left: 450px;
+	width: 350px;
+	height: 600px;
+}
+.content3 .child_header3 {
+	background-image: linear-gradient(rgba(00,00,255, 1), rgba(00,00,255, .5));
+}
+.content3 .child_header3 p {
+	font-size: 50px;
+	text-align: center;
+	line-height: 120px;
+}
+.content3 .detail {
+	visibility: hidden;
+	height: 70%;
+	padding: 30px 50px;
+	text-align: center;
+}
+.content3 .detail p:first-of-type {
+	text-align: center;
+	color: rgba(255,255,255, .7);
+	font: italic 800 50px/100px Microsoft YaHei;
+	text-shadow:3px 3px 3px rgba(0,0,0,1);
+	border-bottom: 6px groove blue;
+}
+.content3 .detail p span:first-child {
+	float: left;
+}
+.content3 .detail p span:last-child {
+	float: right;
+}
+.content3 .child_footer {
+	background-image: linear-gradient(to top ,rgba(00,00,255, 1), rgba(00,00,255, .5));
+}
+.cover3 {
+	position: absolute;
+	top: 120px;
+	left: 0;
+	width: 350px;
+	height: 420px;
+	background-color: #000000;
+}
+/* -------------------板块三结束------------------- */
+
+/* --------------------尾部开始-------------------- */
+footer {
+	border-top: 8px solid #5c5d5d;
+	height: 300px;
+	background-color: #9fa1a3;
+}
+footer .w {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 100px 23px 0px 23px;
+	font:12px Helvetica;
+}
+footer a {
+  text-decoration: none;
+}
+footer .copy {
+  float: right;
+}
+footer .middlep {
+  margin: 10px 0px;
+}
+footer a {
+	color: #636465;
+}
+footer a:hover {
+  color: #ccc4ce;
+}
+/* --------------------尾部结束-------------------- */
